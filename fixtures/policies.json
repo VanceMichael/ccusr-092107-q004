@@ -1,0 +1,62 @@
+{
+  "domain": "scenic-remediation-assets",
+  "version": 1,
+  "policies": [
+    {
+      "type": "public_announcement",
+      "scenicId": "JQ-001",
+      "effectiveFrom": "2026-03-18",
+      "publishedAt": "2026-03-18",
+      "publishedBy": "省文旅厅办公室",
+      "payload": { "title": "关于云岭大峡谷景区降为 3A 级的公告", "body": "经复核评审，云岭大峡谷景区安全管理存在重大隐患，决定降为 3A 级并限期整改。", "channel": "主管部门官网" }
+    },
+    {
+      "type": "rectification_opening_scope",
+      "scenicId": "JQ-001",
+      "effectiveFrom": "2026-03-20",
+      "publishedAt": "2026-03-20",
+      "publishedBy": "市场管理处",
+      "payload": { "mode": "closed", "areas": [] }
+    },
+    {
+      "type": "rectification_opening_scope",
+      "scenicId": "JQ-001",
+      "effectiveFrom": "2026-06-01",
+      "publishedAt": "2026-05-28",
+      "publishedBy": "市场管理处",
+      "payload": { "mode": "partial", "areas": ["索道站", "游客中心"] }
+    },
+    {
+      "type": "budget_occupation",
+      "scenicId": "JQ-001",
+      "effectiveFrom": "2026-03-20",
+      "publishedAt": "2026-03-20",
+      "publishedBy": "财务处",
+      "payload": { "amount": 350, "unit": "万元", "purpose": "安全与服务整改专项", "budgetLine": "2026 年度景区整改专项资金" }
+    },
+    {
+      "type": "review_recusal",
+      "scenicId": "JQ-001",
+      "effectiveFrom": "2026-08-01",
+      "publishedAt": "2026-08-01",
+      "publishedBy": "复核评审组",
+      "payload": { "recused": ["评审员-甲"], "reason": "曾参与该景区 2021 年初评" }
+    },
+    {
+      "type": "public_announcement",
+      "scenicId": "JQ-002",
+      "effectiveFrom": "2026-07-01",
+      "publishedAt": "2026-07-01",
+      "publishedBy": "省文旅厅办公室",
+      "payload": { "title": "关于碧水湾湿地公园主动申请退出评级的公示", "body": "碧水湾湿地公园经营方主动申请退出评级，现予公示。", "channel": "主管部门官网" }
+    },
+    {
+      "type": "public_announcement",
+      "scenicId": "JQ-003",
+      "effectiveFrom": "2026-06-10",
+      "publishedAt": "2026-06-10",
+      "publishedBy": "省文旅厅办公室",
+      "payload": { "title": "关于拟对松台山森林公园摘牌的公告", "body": "松台山森林公园客流数据造假，拟予以摘牌，现予公告。", "channel": "主管部门官网" }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "七类台账资料",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "rating_basis",
+    "inspection",
+    "visitor_feedback",
+    "facility_risk",
+    "operations_data",
+    "rectification_investment",
+    "review_conclusion"
+  ],
+  "properties": {
+    "domain": {
+      "const": "scenic-remediation-assets"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rating_basis": {
+      "$ref": "#/$defs/entries"
+    },
+    "inspection": {
+      "$ref": "#/$defs/entries"
+    },
+    "visitor_feedback": {
+      "$ref": "#/$defs/entries"
+    },
+    "facility_risk": {
+      "$ref": "#/$defs/entries"
+    },
+    "operations_data": {
+      "$ref": "#/$defs/entries"
+    },
+    "rectification_investment": {
+      "$ref": "#/$defs/entries"
+    },
+    "review_conclusion": {
+      "$ref": "#/$defs/entries"
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "scenicId",
+        "recordedAt",
+        "source",
+        "payload"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenicId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recordedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "payload": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "domain": "scenic-remediation-assets",
+  "version": 1,
+  "scenic_spots": [
+    {
+      "id": "JQ-001",
+      "name": "云岭大峡谷景区",
+      "level": "3A",
+      "status": "downgraded_rectifying",
+      "note": "安全隐患已整改并申请复牌；评审关注服务投诉、设施老化与新业态佐证"
+    },
+    {
+      "id": "JQ-002",
+      "name": "碧水湾湿地公园",
+      "level": "3A",
+      "status": "voluntary_exit_in_progress",
+      "note": "经营方主动申请退出评级，正在资产清点与公示"
+    },
+    {
+      "id": "JQ-003",
+      "name": "松台山森林公园",
+      "level": "4A",
+      "status": "delisting_in_progress",
+      "note": "客流数据造假被立案，启动行政摘牌程序"
+    }
+  ]
+}

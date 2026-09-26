@@ -1,0 +1,28 @@
+{
+  "domain": "scenic-remediation-assets",
+  "version": 1,
+  "evidence": [
+    {
+      "id": "EV-001",
+      "scenicId": "JQ-001",
+      "itemId": "AQ-01",
+      "requirement": "索道安全隐患整改",
+      "type": "inspection_record",
+      "ref": "特种设备复检报告 特检-2026-0412",
+      "collectedAt": "2026-04-12",
+      "collectedBy": "检查组-明查一组",
+      "note": "钢丝绳更换后复检合格"
+    },
+    {
+      "id": "EV-002",
+      "scenicId": "JQ-001",
+      "itemId": "AQ-01",
+      "requirement": "索道安全隐患整改",
+      "type": "photo",
+      "ref": "现场照片 AQ-01-20260412-01至07",
+      "collectedAt": "2026-04-12",
+      "collectedBy": "检查组-明查一组",
+      "note": "新钢丝绳安装现场"
+    }
+  ]
+}

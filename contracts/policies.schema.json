@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "政策版本资料",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "policies"
+  ],
+  "properties": {
+    "domain": {
+      "const": "scenic-remediation-assets"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "scenicId",
+          "payload",
+          "effectiveFrom",
+          "publishedBy",
+          "publishedAt"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "rectification_opening_scope",
+              "budget_occupation",
+              "review_recusal",
+              "public_announcement"
+            ]
+          },
+          "scenicId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "payload": {
+            "type": "object"
+          },
+          "effectiveFrom": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publishedBy": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publishedAt": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

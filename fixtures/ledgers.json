@@ -1,0 +1,218 @@
+{
+  "domain": "scenic-remediation-assets",
+  "version": 1,
+  "rating_basis": [
+    {
+      "id": "RB-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2021-05-20",
+      "source": "省文旅厅评级委员会",
+      "payload": { "level": "4A", "decision": "award", "basis": "服务质量与环境质量评分 862 分" }
+    },
+    {
+      "id": "RB-002",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-03-15",
+      "source": "省文旅厅评级委员会",
+      "payload": { "level": "3A", "decision": "downgrade", "basis": "索道设备安全隐患，安全管理失分" }
+    },
+    {
+      "id": "RB-003",
+      "scenicId": "JQ-002",
+      "recordedAt": "2019-09-01",
+      "source": "省文旅厅评级委员会",
+      "payload": { "level": "3A", "decision": "award", "basis": "初评达标" }
+    },
+    {
+      "id": "RB-004",
+      "scenicId": "JQ-003",
+      "recordedAt": "2020-11-12",
+      "source": "省文旅厅评级委员会",
+      "payload": { "level": "4A", "decision": "award", "basis": "复评达标" }
+    }
+  ],
+  "inspection": [
+    {
+      "id": "IN-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-04-10",
+      "source": "检查组-明查一组",
+      "payload": {
+        "mode": "明查",
+        "items": [
+          { "itemId": "AQ-01", "requirement": "索道安全隐患整改", "result": "rectified", "detail": "钢丝绳已更换，特种设备复检合格" },
+          { "itemId": "FW-01", "requirement": "投诉处理机制运行", "result": "fail", "detail": "6 件投诉超期未办结" }
+        ]
+      }
+    },
+    {
+      "id": "IN-002",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-06-02",
+      "source": "检查组-暗访组",
+      "payload": {
+        "mode": "暗访",
+        "items": [
+          { "itemId": "FW-02", "requirement": "窗口服务态度", "result": "fail", "detail": "工作人员推诿游客" },
+          { "itemId": "SS-01", "requirement": "观景平台设施维护", "result": "fail", "detail": "护栏锈蚀、防腐层脱落" }
+        ]
+      }
+    },
+    {
+      "id": "IN-003",
+      "scenicId": "JQ-003",
+      "recordedAt": "2026-05-18",
+      "source": "检查组-数据核查组",
+      "payload": {
+        "mode": "明查",
+        "items": [
+          { "itemId": "SJ-01", "requirement": "客流数据真实性", "result": "fail", "detail": "自报客流与闸机数据差异 33%" }
+        ]
+      }
+    }
+  ],
+  "visitor_feedback": [
+    {
+      "id": "FB-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-05-01",
+      "source": "12301 平台",
+      "payload": { "category": "投诉", "status": "answered", "summary": "索道排队时间过长" }
+    },
+    {
+      "id": "FB-002",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-06-15",
+      "source": "12301 平台",
+      "payload": { "category": "投诉", "status": "open", "summary": "观景平台护栏锈蚀存在安全隐患" }
+    },
+    {
+      "id": "FB-003",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-07-03",
+      "source": "景区意见箱",
+      "payload": { "category": "建议", "status": "resolved", "summary": "增设遮阳休息区" }
+    },
+    {
+      "id": "FB-004",
+      "scenicId": "JQ-003",
+      "recordedAt": "2026-05-20",
+      "source": "12301 平台",
+      "payload": { "category": "投诉", "status": "open", "summary": "宣传内容与实际景点不符" }
+    }
+  ],
+  "facility_risk": [
+    {
+      "id": "FR-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-02-20",
+      "source": "设施巡检系统",
+      "payload": { "facility": "索道", "issue": "钢丝绳磨损超标", "riskLevel": "高", "status": "closed" }
+    },
+    {
+      "id": "FR-002",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-06-02",
+      "source": "设施巡检系统",
+      "payload": { "facility": "观景平台护栏", "issue": "护栏锈蚀、防腐层脱落", "riskLevel": "中", "status": "open" }
+    },
+    {
+      "id": "FR-003",
+      "scenicId": "JQ-003",
+      "recordedAt": "2026-05-18",
+      "source": "设施巡检系统",
+      "payload": { "facility": "游步道", "issue": "路面破损", "riskLevel": "低", "status": "open" }
+    }
+  ],
+  "operations_data": [
+    {
+      "id": "OD-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-07-01",
+      "source": "景区自报系统",
+      "payload": { "kind": "metric", "metric": "月度客流万人次", "value": 12.8 }
+    },
+    {
+      "id": "OD-002",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-07-20",
+      "source": "闸机导出数据",
+      "payload": {
+        "kind": "correction",
+        "metric": "月度客流万人次",
+        "value": 9.6,
+        "corrects": "OD-001",
+        "originalValue": 12.8,
+        "originalSource": "景区自报系统",
+        "reason": "自报口径含未核销团队预约"
+      }
+    },
+    {
+      "id": "OD-003",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-08-01",
+      "source": "闸机导出数据",
+      "payload": { "kind": "metric", "metric": "月度客流万人次", "value": 10.1 }
+    },
+    {
+      "id": "OD-004",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-05-01",
+      "source": "景区经营月报",
+      "payload": { "kind": "activity", "activityId": "ACT-001", "name": "星空露营基地", "launchedAt": "2026-05-01" }
+    },
+    {
+      "id": "OD-005",
+      "scenicId": "JQ-003",
+      "recordedAt": "2026-04-01",
+      "source": "景区自报系统",
+      "payload": { "kind": "metric", "metric": "月度客流万人次", "value": 8.2 }
+    },
+    {
+      "id": "OD-006",
+      "scenicId": "JQ-003",
+      "recordedAt": "2026-05-18",
+      "source": "闸机导出数据",
+      "payload": {
+        "kind": "correction",
+        "metric": "月度客流万人次",
+        "value": 5.5,
+        "corrects": "OD-005",
+        "originalValue": 8.2,
+        "originalSource": "景区自报系统",
+        "reason": "核查发现自报数据虚高"
+      }
+    }
+  ],
+  "rectification_investment": [
+    {
+      "id": "RI-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-04-25",
+      "source": "整改专项账",
+      "payload": { "project": "索道钢丝绳更换", "amount": 280, "unit": "万元", "status": "settled" }
+    },
+    {
+      "id": "RI-002",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-06-20",
+      "source": "整改专项账",
+      "payload": { "project": "投诉处理中心建设", "amount": 60, "unit": "万元", "status": "occupied" }
+    }
+  ],
+  "review_conclusion": [
+    {
+      "id": "RC-001",
+      "scenicId": "JQ-001",
+      "recordedAt": "2026-03-15",
+      "source": "复核评审组",
+      "payload": {
+        "decision": "downgrade",
+        "from": "4A",
+        "to": "3A",
+        "rectificationDeadline": "2026-10-31",
+        "summary": "安全管理存在重大隐患，降为 3A 并限期整改"
+      }
+    }
+  ]
+}
