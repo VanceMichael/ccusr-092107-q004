@@ -1,0 +1,47 @@
+[
+  {
+    "id": "rule-facility-major-open",
+    "name": "存在未闭环的重大设施安全隐患",
+    "category": "facility_risk",
+    "where": {
+      "kind": "hazard",
+      "payload.severity": "major",
+      "payload.status": "open"
+    },
+    "count": { "gte": 1 },
+    "finding": { "level": "major", "code": "FACILITY_MAJOR_OPEN", "action": "downgrade" }
+  },
+  {
+    "id": "rule-complaint-overdue",
+    "name": "服务投诉逾期未办结",
+    "category": "visitor_feedback",
+    "where": {
+      "kind": "complaint",
+      "payload.status": "open",
+      "payload.age_days": { "gte": 30 }
+    },
+    "count": { "gte": 1 },
+    "finding": { "level": "minor", "code": "COMPLAINT_OVERDUE", "action": "rectify" }
+  },
+  {
+    "id": "rule-data-integrity",
+    "name": "运营数据存在更正记录，涉嫌数据造假",
+    "category": "operation_data",
+    "where": {
+      "payload.correction": { "exists": true }
+    },
+    "count": { "gte": 1 },
+    "finding": { "level": "major", "code": "DATA_CORRECTED", "action": "investigate" }
+  },
+  {
+    "id": "rule-new-business-no-gain",
+    "name": "新业态活动未带来经营改善",
+    "category": "operation_data",
+    "where": {
+      "payload.metric": "new_business_revenue",
+      "payload.value": { "lte": 0 }
+    },
+    "count": { "gte": 1 },
+    "finding": { "level": "minor", "code": "NEW_BUSINESS_NO_GAIN", "action": "rectify" }
+  }
+]
